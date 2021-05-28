@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "electron .",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
@@ -25,11 +26,27 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "@vue/test-utils": "^2.0.0-0",
+    "electron": "^13.0.1",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
     "prettier": "^2.2.1",
     "typescript": "~4.1.5",
     "vue-jest": "^5.0.0-0"
-  }
+  },
+  "description": "```\r npm install\r ```",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakehappersett/TNH.git"
+  },
+  "author": "Devon Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakehappersett/TNH/issues"
+  },
+  "homepage": "https://github.com/jakehappersett/TNH#readme"
 }
