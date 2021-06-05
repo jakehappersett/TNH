@@ -2,18 +2,26 @@
   "name": "tnh",
   "version": "0.1.0",
   "private": true,
+  "description": "```\r npm install\r ```",
+  "author": "Devon Richards",
   "scripts": {
-    "start": "electron .",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "start": "electron ."
   },
+  "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
@@ -27,26 +35,25 @@
     "@vue/eslint-config-typescript": "^7.0.0",
     "@vue/test-utils": "^2.0.0-0",
     "electron": "^13.0.1",
+    "electron-devtools-installer": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
     "prettier": "^2.2.1",
     "typescript": "~4.1.5",
+    "vue-cli-plugin-electron-builder": "~2.0.0",
     "vue-jest": "^5.0.0-0"
   },
-  "description": "```\r npm install\r ```",
-  "main": "main.js",
-  "directories": {
-    "test": "tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jakehappersett/TNH.git"
-  },
-  "author": "Devon Richards",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jakehappersett/TNH/issues"
   },
-  "homepage": "https://github.com/jakehappersett/TNH#readme"
+  "directories": {
+    "test": "tests"
+  },
+  "homepage": "https://github.com/jakehappersett/TNH#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakehappersett/TNH.git"
+  }
 }
