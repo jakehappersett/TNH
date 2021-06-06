@@ -1,6 +1,8 @@
 <template>
-  <Menu/>
-  <Landing/>
+  <div class="container">
+    <Menu />
+    <Landing />
+  </div>
 </template>
 
 <script lang="ts">
@@ -14,7 +16,6 @@ export default defineComponent({
     Landing,
     Menu,
   },
-
 });
 </script>
 
