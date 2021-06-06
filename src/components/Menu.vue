@@ -6,13 +6,14 @@
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>{{title}}</title>
   </head>
-  {{title}}
 </template>
-<script>
-export default {
-    name: "Header",
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+    name: "Menu",
     props: {
         title: String,
     },
-};
+});
 </script>

@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
-  <Home/>
+  <Menu/>
+  <Landing/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Home from "./views/Home.vue";
+import Landing from "./views/Landing.vue";
+import Menu from "./components/Menu.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Home,
+    Landing,
+    Menu,
   },
 
 });

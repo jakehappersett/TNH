@@ -1,7 +1,8 @@
 <template>
-  <Header :title="title" />
   <div>
-    <h1>And we're here to help you out</h1>
+    <img alt="Anime Face" src="../assets/Anime_Face.png" />
+    <h1>We know why you're here</h1>
+    <h2>And we're here to help you out</h2>
     Run using Node.js <span id="node-version"></span>, Chromium
     <span id="chrome-version"></span>, and Electron
     <span id="electron-version"></span>.
@@ -10,12 +11,10 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "../components/Header.vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "Landing",
   components: {
-    Header,
   },
   data() {
     return {
